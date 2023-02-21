@@ -100,7 +100,7 @@ def returnMinptsCandidate(DistMatrix,EpsCandidate):
             for j in range(len(DistMatrix[i])):
                 if DistMatrix[i][j] <= tmp_eps:
                     tmp_count = tmp_count + 1
-        MinptsCandidate.append(tmp_count/len(dataSet))
+        MinptsCandidate.append(tmp_count/len(dataSet)) # 没有声明dataSet
     return MinptsCandidate
 
 
